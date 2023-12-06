@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    color: yellow;
+    font-size: 32px;
+    background-color: rgb(23, 134, 23);
+    text-align: center;
+    padding: 12px 24px;
+    font-family: sans-serif;
+}
+body{
+    background-color: wheat;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.list{
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+}
+ul{
+    list-style-type: none ;
+}
+li img{
+    max-height: 100%;
+    max-width: 100%;
+}
