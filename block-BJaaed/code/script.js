@@ -116,3 +116,31 @@ let books={
       },
     ],
 };
+
+let rootDoc=document.querySelector("ul");
+
+books.books.forEach(book=>{
+    let li=document.createElement('li');
+    let image=document.createElement("img");
+    image.src=book.image;
+    image.alt=book.title;
+
+    let h4=document.createElement("h4");
+    h4.innerText=book.title;
+
+    let p=document.createElement("p");
+    p.innerText="Author:"
+
+    let span=document.createElement("span");
+    let authorName=document.createTextNode(book.author);
+    span.append(authorName);
+    p.append(span);
+   
+    let br=document.createElement("br");
+    let link=document.createElement("a");
+    
+link.innerText="Buy Later";
+    link.href=book.website;
+    li.append(image,p,span,h4,br,link);
+    rootDoc.append(li);
+});
